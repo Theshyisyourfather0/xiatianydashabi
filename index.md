@@ -1,37 +1,74 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
 
-You can use the [editor on GitHub](https://github.com/Theshyisyourfather0/xiatianydashabi/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <title>别踩白块[夏天y版]</title>
+    <meta itemprop="name" content="别踩白块[夏天y版]" />
+    <meta itemprop="description" content="别踩白块[夏天y版]" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width,target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./static/index.css" rel="stylesheet" type="text/css">
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://passport.cnblogs.com/scripts/jsencrypt.min.js"></script>
+    <script src="./static/index.js"></script>
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body onLoad="init()" oncontextmenu=self.event.returnValue=false>
+    <div id="GameScoreLayer" class="BBOX SHADE bgc1" style="display:none;">
+        <div style="padding:5%;margin-top: 200px;background-color: rgba(125, 181, 216, 0.3);">
+            <div id="GameScoreLayer-text"></div>
+            <div id="GameScoreLayer-score" style="margin:10px 0;">得分</div>
+            <div id="GameScoreLayer-bast">最佳</div>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="replayBtn()">重来</button>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href='https://github.com/arcxingye/EatKano'">开源</button>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href='https://github.com/fangkuai767/EatKun'">开源（改）</button>
+        </div>
+    </div>
+    </div>
+    <div id="welcome" class="SHADE BOX-M">
+        <div class="welcome-bg FILL"></div>
+        <div class="FILL BOX-M" style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:5;">
+            <div style="margin:0 8% 0 9%;">
+                <div style="font-size:2.6em; color:#FEF002;">别踩白块[夏天y版]！！！</div><br />
+                <div style="font-size:2.2em; color:#fff; line-height:1.5em;">
+                    从最底下的小王开始<br />
+                    看看你20秒能宰掉几个王哥<br />
+                    手机端可能会出现贴图消失<br />
+                    属正常现象，等待一下即可<br />
+                </div>
+                <br />
+                <div id="btn_group" style="display: block;">
+                    <button type="button" id="ready-btn" class="btn btn-primary loading btn-lg">开始爆杀王哥</button>
+                    <br /><br />
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="show_setting()">爆杀按键自定义</button>
+                </div>
+                <div id="setting" style="display: none;">
+                    <!-- 此为无排行榜版本，去除名字留言 -->
+                    <div class="input-group mb-3" style="display: none;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">名字</span>
+                        </div>
+                        <input type="text" id="username" class="form-control" maxlength=8 placeholder="用于纪录排行(特殊字符会被过滤)">
+                    </div>
+                    <div class="input-group mb-3" style="display: none;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">留言</span>
+                        </div>
+                        <input type="text" id="message" class="form-control" maxlength=50 placeholder="禁广告/脏话(本项可不填)">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">按键</span>
+                        </div>
+                        <input type="text" id="keyboard" class="form-control" maxlength=4 placeholder="默认为1234">
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="show_btn();save_cookie();">完成</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Theshyisyourfather0/xiatianydashabi/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>
